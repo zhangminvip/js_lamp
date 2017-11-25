@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zhang</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function changeImage()
+		{
+			element = document.getElementById("myimage");
+			if (element.src.match("bulbon"))
+			{
+				element.src = "eg_bulboff.gif";
+
+			}
+			else 
+			{
+				element.src = "eg_bulbon.gif";
+			}
+		}
+
+	</script>
+
+	<img id = "myimage" onclick="changeImage()" src="eg_bulboff.gif">
+
+	<p>click lamp to light or put out</p>
+
+</body>
+</html>
